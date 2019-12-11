@@ -1,0 +1,9 @@
+#!/sbin/openrc-run
+# Copyright 1999-2016 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+
+description="SimpleJson data source for Graphene database"
+pidfile=/var/run/graphene_http.pid
+command=/usr/bin/graphene_http
+command_args="-f -d /var/lib/graphene"
