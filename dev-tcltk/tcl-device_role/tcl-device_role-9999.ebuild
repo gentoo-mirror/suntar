@@ -6,7 +6,7 @@ EAPI=7
 inherit git-r3
 
 DESCRIPTION="DeviceRole library -- standardized drivers for devices"
-HOMEPAGE="https://github.com/suntar/${PN}"
+HOMEPAGE="https://github.com/slazav/${PN}"
 EGIT_REPO_URI="https://github.com/suntar/${PN}.git"
 LICENSE="Unknown"
 SLOT="0"
