@@ -6,7 +6,7 @@ EAPI=7
 inherit git-r3
 
 DESCRIPTION="Record signals with Picoscope devices and process them."
-HOMEPAGE="https://github.com/suntar/${PN}"
+HOMEPAGE="https://github.com/slazav/${PN}"
 EGIT_REPO_URI="https://github.com/suntar/${PN}.git"
 LICENSE="GPL"
 SLOT="0"
