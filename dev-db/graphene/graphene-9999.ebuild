@@ -19,12 +19,13 @@ RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
 src_compile() {
+   tar xvf modules.tar
    emake -C graphene
 }
 
 src_install() {
   dobin graphene/{graphene,graphene_http}
-  dobin graphene/scripts/graphene_tab
+  dobin graphene/scripts/*
   cp "${FILESDIR}"/graphene_http.init.gentoo "${T}"/graphene_http || die
   doinitd "${T}"/graphene_http
 }

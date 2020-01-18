@@ -21,7 +21,7 @@ RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
 PATCHES=(
-	"${FILESDIR}"/graphene-2.8-vers.patch
+	"${FILESDIR}"/graphene-2.8-r1-vers.patch
 )
 
 src_compile() {
@@ -30,7 +30,7 @@ src_compile() {
 
 src_install() {
   dobin graphene/{graphene,graphene_http}
-  dobin graphene/scripts/graphene_tab
+  dobin graphene/scripts/*
   cp "${FILESDIR}"/graphene_http.init.gentoo "${T}"/graphene_http || die
   doinitd "${T}"/graphene_http
 }
