@@ -1,0 +1,26 @@
+diff --git a/graphene/graphene.cpp b/graphene/graphene.cpp
+index 7001f5e..f370742 100644
+--- a/graphene/graphene.cpp
++++ b/graphene/graphene.cpp
+@@ -1,7 +1,7 @@
+ /*  Command-line interface for the Graphene time series database.
+ */
+ 
+-#define VERSION "2.7"
++#define VERSION "2.8"
+ #define GRAPHENE_DEF_ENV "lock"
+ #define GRAPHENE_DEF_DPOLICY "replace"
+ #define GRAPHENE_DEF_DBPATH  "."
+diff --git a/graphene/test_cli.sh b/graphene/test_cli.sh
+index dfec3fb..1c88a1d 100755
+--- a/graphene/test_cli.sh
++++ b/graphene/test_cli.sh
+@@ -25,7 +25,7 @@ assert "$(./graphene -X . 2>&1)" "./graphene: invalid option -- 'X'"
+ # unknown command
+ assert "$(./graphene -d . a)" "#Error: Unknown command: a"
+ 
+-assert "$(./graphene -d . *idn?)" "Graphene database 2.7"
++assert "$(./graphene -d . *idn?)" "Graphene database 2.8"
+ 
+ assert "$(./graphene -d . get_time a)" "#Error: too many parameters"
+ 
