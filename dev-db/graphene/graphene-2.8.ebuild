@@ -8,7 +8,6 @@ inherit git-r3
 DESCRIPTION="Graphene -- a simple time-series database with nanosecond precision for scientific applications."
 HOMEPAGE="https://github.com/slazav/${PN}"
 EGIT_REPO_URI="https://github.com/slazav/${PN}.git"
-EGIT_COMMIT="bb1d5040447b1fceea570575ade54a4dd932f0ab"
 EGIT_SUBMODULES=()
 
 LICENSE="GPL"
@@ -20,9 +19,11 @@ DEPEND="sys-libs/db dev-libs/jansson net-libs/libmicrohttpd"
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
-PATCHES=(
-	"${FILESDIR}"/graphene-2.8-r1-vers.patch
-)
+
+src_unpack() {
+    git-r3_fetch ${EGIT_REPO_URI} refs/tags/${PV} || die "Failed to fetch"
+    git-r3_checkout || die "Failed to check out"
+}
 
 src_compile() {
    emake -C graphene
