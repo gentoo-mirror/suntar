@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=Read data from matlab .fig format
+EAPI=7
+HOMEPAGE=https://github.com/suntar/OpenMatlabFigureInOctave/
+INHERIT=git-r3
+KEYWORDS=~amd64 ~x86
+LICENSE=Unknown
+PROPERTIES=live
+RDEPEND=sci-mathematics/octave
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=a8047f99eb823a846b707cee0f4845ee

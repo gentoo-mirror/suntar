@@ -1,0 +1,11 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=DeviceRole library -- standardized drivers for devices
+EAPI=7
+HOMEPAGE=https://github.com/slazav/tcl-device_role
+INHERIT=git-r3
+LICENSE=Unknown
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=b75e87198bc947c1de509af256eb4447

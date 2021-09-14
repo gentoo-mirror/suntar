@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Symlinks for packages from suntar-overlay.
+EAPI=7
+HOMEPAGE=https://github.com/suntar/suntar-overlay.git
+IUSE=+f77
+KEYWORDS=~amd64
+LICENSE=GPL
+SLOT=0
+_md5_=0ce74e27791252313cba7bd7c4691f68

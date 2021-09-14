@@ -1,0 +1,11 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install prepare unpack
+DESCRIPTION=Record signals with Picoscope devices and process them.
+EAPI=7
+HOMEPAGE=https://github.com/slazav/pico_osc
+INHERIT=git-r3
+LICENSE=GPL
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=a9c61b238cd7ab779148623f52d6991b

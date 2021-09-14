@@ -1,0 +1,11 @@
+app-misc/suntar-symlinks 9999: Symlinks for packages from suntar-overlay.
+dev-db/graphene 2.8 9999: Graphene -- a simple time-series database with nanosecond precision for scientific applications.
+dev-embedded/libpico 9999: Libraries to access PicoScope devices
+dev-tcltk/blt 2.5: graphics extension library for Tcl/Tk - library
+dev-tcltk/exp_scripts 9999: Useful scripts for experimental setup and data processing.
+dev-tcltk/pico_osc 9999: Record signals with Picoscope devices and process them.
+dev-tcltk/tcl-device 9999: Device library -- a tcl library for making complicated experimental setups.
+dev-tcltk/tcl-device_role 9999: DeviceRole library -- standardized drivers for devices
+dev-tcltk/tcl-xblt 9999: tcl-xblt library from ROTA group
+sci-misc/octave-fig 9999: Read data from matlab .fig format
+sci-physics/magneetti 9999: Magneetti - calculate cylindrically-symmetric magnets.

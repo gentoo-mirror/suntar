@@ -1,0 +1,10 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=tcl-xblt library from ROTA group
+EAPI=7
+HOMEPAGE=https://github.com/slazav/tcl-xblt
+INHERIT=git-r3
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=ec19df1cad0caf700bf18150afebaee2

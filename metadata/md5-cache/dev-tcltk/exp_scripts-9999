@@ -1,0 +1,11 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=Useful scripts for experimental setup and data processing.
+EAPI=7
+HOMEPAGE=https://github.com/slazav/exp_scripts
+INHERIT=git-r3
+LICENSE=GPL
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=8beb27d5793ce31e6b26ad18bb57159e
