@@ -4,12 +4,6 @@ suntar overlay
 This is an unofficial gentoo repository (overlay) with packages that I currently use on my gentoo computer.
 These ebuilds were never tested on clean gentoo installation, so dependency lists might be not complete.
 
-To add this overlay run the following command:
+To add this overlay run
 
-layman  --list --overlays https://raw.githubusercontent.com/suntar/suntar-overlay/master/overlay.xml
-
-layman  --add suntar -o https://raw.githubusercontent.com/suntar/suntar-overlay/master/overlay.xml
-
-To update:
-
-layman  --sync suntar -o https://raw.githubusercontent.com/suntar/suntar-overlay/master/overlay.xml
+#layman -a suntar
