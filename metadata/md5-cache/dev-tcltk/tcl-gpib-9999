@@ -9,4 +9,4 @@ PROPERTIES=live
 RDEPEND=sci-libs/linux-gpib
 SLOT=0
 _eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=dc01968dfed36e9b2ef07637e1fe5c00
+_md5_=99ec424af84fe3276475a122b450895a
