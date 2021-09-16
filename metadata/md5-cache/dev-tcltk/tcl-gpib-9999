@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DEPEND=sci-libs/linux-gpib
+DESCRIPTION=tcl-gpib interface from ROTA group
+EAPI=7
+HOMEPAGE=https://github.com/slazav/tcl-gpib
+INHERIT=git-r3
+PROPERTIES=live
+RDEPEND=sci-libs/linux-gpib
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=dc01968dfed36e9b2ef07637e1fe5c00
