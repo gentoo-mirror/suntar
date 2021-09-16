@@ -26,7 +26,8 @@ src_install() {
   doins libgpib.so.0
   dosym libgpib.so.0 /usr/$(get_libdir)/tcl/libgpib.so
 
-  mv pkgIndex.tcl.in pkgIndex.tcl
+  cat pkgIndex.tcl.in | sed "s|%LIB_DIR%|/usr/$(get_libdir)/tcl|" > pkgIndex.tcl
   insinto /usr/share/tcl/GpibLib
   doins pkgIndex.tcl
 }
+
