@@ -26,6 +26,9 @@ src_unpack() {
 }
 
 src_compile() {
+   export CPPFLAGS="${CPPFLAGS} -fpermissive"
+   mv graphene/Makefile graphene/Makefile_
+   cat graphene/Makefile_ | sed s'/CPPFLAGS=/CPPFLAGS+=/' > graphene/Makefile
    emake -C graphene
 }
 
