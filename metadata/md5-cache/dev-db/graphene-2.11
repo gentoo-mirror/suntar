@@ -11,4 +11,4 @@ PROPERTIES=live
 RDEPEND=sys-libs/db dev-libs/jansson net-libs/libmicrohttpd
 SLOT=0
 _eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=d3c52ddb78e2f81db1a34cbed189f6ba
+_md5_=c1f09e4c1e1f59411181730669071982
