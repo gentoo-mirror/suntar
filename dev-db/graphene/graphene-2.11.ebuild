@@ -8,6 +8,8 @@ inherit git-r3
 DESCRIPTION="Graphene -- a simple time-series database with nanosecond precision for scientific applications."
 HOMEPAGE="https://github.com/slazav/${PN}"
 EGIT_REPO_URI="https://github.com/slazav/${PN}.git"
+EGIT_COMMIT=f12287c00ca1e2dea4dd792fd02a02620cd1755d
+
 LICENSE="GPL"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
@@ -16,6 +18,7 @@ IUSE=""
 DEPEND="sys-libs/db dev-libs/jansson net-libs/libmicrohttpd"
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
+
 
 src_compile() {
    export CPPFLAGS="${CPPFLAGS} -fpermissive"
