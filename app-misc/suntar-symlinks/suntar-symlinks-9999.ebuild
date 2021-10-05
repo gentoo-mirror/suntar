@@ -18,7 +18,8 @@ S=${WORKDIR}
 
 src_compile() {
    if use usleep; then
-     make -C ${F} usleep
+     cp ${FILESDIR}/{usleep.c,Makefile} ${S}/
+     make usleep
    fi
 }
 
@@ -41,6 +42,6 @@ src_install() {
    fi
 
    if use usleep; then
-     which usleep 2>/dev/null || dobin ${F}/usleep
+     which usleep 2>/dev/null || dobin ${S}/usleep
    fi
 }
