@@ -1,12 +1,12 @@
 BDEPEND=db? ( sys-libs/db )
-DEFINED_PHASES=install
+DEFINED_PHASES=compile install
 DEPEND=db? ( sys-libs/db )
 DESCRIPTION=Symlinks for packages from suntar-overlay.
 EAPI=7
 HOMEPAGE=https://github.com/suntar/suntar-overlay.git
-IUSE=+f77 db
+IUSE=+f77 db usleep
 KEYWORDS=~amd64
 LICENSE=GPL
 RDEPEND=db? ( sys-libs/db )
 SLOT=0
-_md5_=419d3ee6c572e825c6bb01ce7ab1e23c
+_md5_=9abc29ccabd029e3107a40bce5a83181
