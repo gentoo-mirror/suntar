@@ -1,0 +1,18 @@
+diff --git a/server/device_d.test1 b/server/device_d.test1
+index 5ef65d6..3ef97eb 100755
+--- a/server/device_d.test1
++++ b/server/device_d.test1
+@@ -19,11 +19,11 @@ assert_cmd "./device_d -C ''  -p a"\
+ 
+ #####################
+ # try to stop the server
+-./device_d --stop -p $port --pidfile pid.tmp &>/dev/null ||:
++./device_d --logfile log.txt --stop -p $port --pidfile pid.tmp &>/dev/null ||:
+ 
+ #####################
+ # run server in normal mode (background)
+-./device_d -C '' --pidfile pid.tmp -p $port -v 0 --devfile test_data/n1.txt &
++./device_d -C '' --logfile log.txt --pidfile pid.tmp -p $port -v 0 --devfile test_data/n1.txt &
+ 
+ pid=$!
+ # wait until server write its pid-file and check it

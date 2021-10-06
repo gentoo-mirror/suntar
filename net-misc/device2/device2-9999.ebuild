@@ -17,13 +17,13 @@ DEPEND="dev-libs/jansson net-libs/libmicrohttpd net-misc/curl sci-libs/linux-gpi
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND} app-misc/suntar-symlinks[usleep]"
 
+PATCHES=(
+  "${FILESDIR}"/${PN}-gentoo.patch
+)
+
 src_prepare() {
    default
    tar xvf modules.tar >/dev/null
-}
-
-src_compile() {
-   emake
 }
 
 src_install() {
