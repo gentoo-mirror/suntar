@@ -1,0 +1,34 @@
+#!/sbin/openrc-run
+# Copyright 2021 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+
+description="HTTP server for accessing devices"
+pidfile=/var/run/device_d.pid
+logfile=/var/log/device_d.log
+command=/usr/bin/device_d
+extra_started_commands="reload"
+
+client=/usr/bin/device_c
+
+
+start() {
+	$command --dofork
+}
+
+stop() {
+	$command --stop
+}
+
+status() {
+	$client ping && $client get_srv
+}
+
+reload() {
+	$command --reload
+}
+
+restart() {
+	$command --stop
+	$command --start
+}
