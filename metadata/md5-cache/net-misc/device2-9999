@@ -1,0 +1,13 @@
+BDEPEND=dev-libs/jansson net-libs/libmicrohttpd net-misc/curl sci-libs/linux-gpib app-misc/suntar-symlinks[usleep] >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install prepare unpack
+DEPEND=dev-libs/jansson net-libs/libmicrohttpd net-misc/curl sci-libs/linux-gpib
+DESCRIPTION=Device2 -- a client-server system for accessing devices and programs in experimental setups.
+EAPI=7
+HOMEPAGE=https://github.com/slazav/device2
+INHERIT=git-r3
+LICENSE=GPL
+PROPERTIES=live
+RDEPEND=dev-libs/jansson net-libs/libmicrohttpd net-misc/curl sci-libs/linux-gpib
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=603c5f878f9c518a894d7a9981acfcfd
