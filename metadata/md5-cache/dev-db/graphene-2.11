@@ -10,5 +10,5 @@ LICENSE=GPL
 PROPERTIES=live
 RDEPEND=sys-libs/db dev-libs/jansson net-libs/libmicrohttpd
 SLOT=0
-_eclasses_=git-r3	c57c50c922e121043788de0b40ada60a
+_eclasses_=git-r3	27e13c09a4c7e4c78ac812f74727e676
 _md5_=c1f09e4c1e1f59411181730669071982
