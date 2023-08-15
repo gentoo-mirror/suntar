@@ -8,7 +8,7 @@ inherit git-r3
 DESCRIPTION="Graphene -- a simple time-series database with nanosecond precision for scientific applications."
 HOMEPAGE="https://github.com/slazav/${PN}"
 EGIT_REPO_URI="https://github.com/slazav/${PN}.git"
-EGIT_COMMIT=f12287c00ca1e2dea4dd792fd02a02620cd1755d
+EGIT_COMMIT=2764551673eb4dcd83a46fbe8e783ba21e5b9f71
 
 LICENSE="GPL"
 SLOT="0"

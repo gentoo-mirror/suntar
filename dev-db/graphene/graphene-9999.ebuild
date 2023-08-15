@@ -23,7 +23,7 @@ src_compile() {
        ( ewarn "db_dump is needed for running make_tests " \
          && ewarn "package app-misc/suntar-symlinks[db] provides symlinks for db_* programs"  \
          && die )
-   emake
+   emake -j1
 }
 
 src_install() {
