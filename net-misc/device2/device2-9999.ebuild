@@ -28,7 +28,7 @@ src_prepare() {
 
 src_prepare() {
   default
-  make
+  emake -j1
 }
 
 src_install() {
