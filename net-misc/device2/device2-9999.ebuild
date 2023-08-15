@@ -26,6 +26,11 @@ src_prepare() {
    tar xvf modules.tar >/dev/null
 }
 
+src_prepare() {
+  default
+  make
+}
+
 src_install() {
   dobin server/device_{c,d}
   dodir /etc/device2
