@@ -10,4 +10,4 @@ PROPERTIES=live
 RDEPEND=dev-libs/jansson net-libs/libmicrohttpd net-misc/curl sci-libs/linux-gpib
 SLOT=0
 _eclasses_=git-r3	2358a7b20091609e24bd3a83b3ac5991
-_md5_=af519b613c9c68e8a32d4ea8faccaca0
+_md5_=fe957357b773c88df8e4a2452903eeba
