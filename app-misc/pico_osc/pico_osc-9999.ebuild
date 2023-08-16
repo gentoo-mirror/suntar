@@ -15,7 +15,7 @@ IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}"
-BDEPEND=""
+BDEPEND="sci-libs/fftw"
 
 src_prepare() {
   default
@@ -24,7 +24,7 @@ src_prepare() {
 }
 
 src_compile() {
-   emake
+   emake -j1
 }
 
 src_install() {
@@ -38,4 +38,6 @@ src_install() {
 
   insinto /usr/share/tcl/SigLoad/
   doins sig_viewer/pkgIndex.tcl
+  # add symlinks  as /usr/include/pico/{HRDL.h,PicoStatus.h,ps4000Api.h}
 }
+
