@@ -38,6 +38,11 @@ src_prepare() {
   tar xvf data.tar.gz -C ${tmp}
   ar x ps4000.deb
   tar xvf data.tar.gz -C ${tmp}
+
+  # create symlinks for app-misc/pico_osc package
+  cd ${S}/data/opt/picoscope/include/ && \
+    mkdir pico && \
+    for i in $(ls -ad */*); do ln -s /usr/include/$i pico/$(basename $i); done
 }
 
 src_install() {
