@@ -11,8 +11,8 @@ KEYWORDS=""
 IUSE=""
 
 SRC_URI="https://labs.picotech.com/debian/pool/main/libp/libpicohrdl/libpicohrdl_2.0.17-1r1441_amd64.deb \
-         https://labs.picotech.com/debian/pool/main/libp/libpicoipp/libpicoipp_1.3.0-4r21_amd64.deb \
-         https://labs.picotech.com/debian/pool/main/libp/libps4000/libps4000_2.1.0-2r570_amd64.deb \
+         https://labs.picotech.com/debian/pool/main/libp/libpicoipp/libpicoipp_1.4.0-4r133_amd64.deb \
+         https://labs.picotech.com/debian/pool/main/libp/libps4000/libps4000_2.1.83-2r3073_amd64.deb \
          "
 RESTRICT="mirror"
 
@@ -33,11 +33,11 @@ src_prepare() {
   tmp='./data/'; mkdir -p ${tmp}
 
   ar x hrdl.deb
-  tar xvf data.tar.xz -C ${tmp}
+  tar xvf data.tar.* -C ${tmp}
   ar x ipp.deb
-  tar xvf data.tar.gz -C ${tmp}
+  tar xvf data.tar.* -C ${tmp}
   ar x ps4000.deb
-  tar xvf data.tar.gz -C ${tmp}
+  tar xvf data.tar.* -C ${tmp}
 
   # create symlinks for app-misc/pico_osc package
   cd ${S}/data/opt/picoscope/include/ && \
