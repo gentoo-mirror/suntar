@@ -4,5 +4,5 @@ EAPI=7
 HOMEPAGE=https://labs.picotech.com/debian/pool/main/
 RESTRICT=mirror
 SLOT=0
-SRC_URI=https://labs.picotech.com/debian/pool/main/libp/libpicohrdl/libpicohrdl_2.0.17-1r1441_amd64.deb https://labs.picotech.com/debian/pool/main/libp/libpicoipp/libpicoipp_1.3.0-4r21_amd64.deb https://labs.picotech.com/debian/pool/main/libp/libps4000/libps4000_2.1.0-2r570_amd64.deb
-_md5_=8d07e2eabe8cb9eb6be041d5f9b447e3
+SRC_URI=https://labs.picotech.com/debian/pool/main/libp/libpicohrdl/libpicohrdl_2.0.17-1r1441_amd64.deb https://labs.picotech.com/debian/pool/main/libp/libpicoipp/libpicoipp_1.4.0-4r133_amd64.deb https://labs.picotech.com/debian/pool/main/libp/libps4000/libps4000_2.1.83-2r3073_amd64.deb
+_md5_=e0170596fd3a3363400866ba04a17b35
