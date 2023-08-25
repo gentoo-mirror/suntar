@@ -1,0 +1,26 @@
+#!/sbin/openrc-run
+
+command=/usr/bin/ziServer
+MYPROG_OPTS=""
+description="Zurich Instruments HF2 Data Server"
+pidfile=/var/run/zi_dataserver-hf2.pid
+
+
+depend() {
+   need net
+}
+
+start() {
+   ebegin "Starting ${description}"
+   start-stop-daemon --start --quiet --background --make-pidfile --pidfile ${pidfile} \
+     --exec ${command} \
+     -- ${MYPROG_OPTS}
+   eend $?
+}
+
+stop() {
+   ebegin "Stopping ${description}"
+   start-stop-daemon --stop --quiet --pidfile ${pidfile}
+   eend $?
+}
+

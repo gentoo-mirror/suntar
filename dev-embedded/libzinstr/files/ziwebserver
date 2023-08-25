@@ -1,0 +1,26 @@
+#!/sbin/openrc-run
+
+command=/usr/bin/ziWebServer
+MYPROG_OPTS="-r /opt/ziLabOne/WebServer/html/ -d /tmp/ziWebServerLog_data/"
+description="Zurich Instruments Web Server"
+pidfile=/var/run/zi_webserver.pid
+
+
+depend() {
+   need net
+}
+
+start() {
+   ebegin "Starting ${description}"
+   start-stop-daemon --start  --background --make-pidfile --pidfile ${pidfile} \
+     --exec ${command} \
+     -- ${MYPROG_OPTS}
+   eend $?
+}
+
+stop() {
+   ebegin "Stopping ${description}"
+   start-stop-daemon --stop --quiet --pidfile ${pidfile}
+   eend $?
+}
+
