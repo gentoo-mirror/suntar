@@ -19,12 +19,8 @@ BDEPEND="${DEPEND} app-misc/suntar-symlinks[usleep]"
 
 PATCHES=(
   "${FILESDIR}"/${PN}-gentoo.patch
+  "${FILESDIR}"/${PN}-gcc-13.patch #https://gcc.gnu.org/gcc-13/porting_to.html
 )
-
-src_prepare() {
-   default
-   tar xvf modules.tar >/dev/null
-}
 
 src_prepare() {
   default

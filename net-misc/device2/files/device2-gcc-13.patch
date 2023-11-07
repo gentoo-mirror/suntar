@@ -1,0 +1,10 @@
+--- a/modules/err/err.h
++++ b/modules/err/err.h
+@@ -8,6 +8,7 @@
+ #include <sstream>
+ #include <string>
+ #include <exception>
++#include <cstdint>
+ 
+ 
+ /***********************************************************/
