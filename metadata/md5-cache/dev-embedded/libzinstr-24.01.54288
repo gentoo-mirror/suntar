@@ -1,0 +1,9 @@
+DEFINED_PHASES=install prepare unpack
+DESCRIPTION=LabOne libraries to access Zurich Instrument devices
+EAPI=8
+HOMEPAGE=https://www.zhinst.com/europe/en/support/download-center
+LICENSE=BSD MIT
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://download.zhinst.com/24.01.54288/LabOneLinux64-24.01.54288.tar.gz
+_md5_=0efe2e3b37607e3f52ccd9bde09c9abd
