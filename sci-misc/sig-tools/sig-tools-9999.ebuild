@@ -16,7 +16,7 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}
 	dev-tcltk/itcl
-	dev-tcltk/blt[X]
+	dev-tcltk/blt
 "
 BDEPEND="sci-libs/fftw"
 
