@@ -14,7 +14,10 @@ KEYWORDS=""
 IUSE=""
 
 DEPEND=""
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	dev-tcltk/itcl
+	dev-tcltk/blt[X]
+"
 BDEPEND="sci-libs/fftw"
 
 src_prepare() {
