@@ -12,4 +12,5 @@ dev-tcltk/tcl-xblt 9999: tcl-xblt library from ROTA group
 media-gfx/gqview 2.1.5-r2: A GTK-based image browser
 net-misc/device2 9999: Device2 -- a client-server system for accessing devices and programs in experimental setups.
 sci-misc/octave-fig 9999: Read data from matlab .fig format
+sci-misc/sig-tools 9999: Process oscilloscope data written in .sig format.
 sci-physics/magneetti 9999: Magneetti - calculate cylindrically-symmetric magnets.
