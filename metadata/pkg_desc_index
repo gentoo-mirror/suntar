@@ -1,4 +1,4 @@
-app-misc/pico_osc 9999: Record signals with Picoscope devices and process them.
+app-misc/pico_osc 9999: Record signals with Picoscope devices.
 app-misc/suntar-symlinks 9999: Symlinks for packages from suntar-overlay.
 dev-db/graphene 2.8 2.10 2.11 2.12 9999: Graphene -- a simple time-series database with nanosecond precision for scientific applications.
 dev-embedded/libpico 9999: Libraries to access PicoScope devices

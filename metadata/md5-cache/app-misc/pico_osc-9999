@@ -1,11 +1,13 @@
-BDEPEND=sci-libs/fftw >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-embedded/libpico dev-libs/libusb dev-libs/jansson >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install prepare unpack
-DESCRIPTION=Record signals with Picoscope devices and process them.
+DEPEND=dev-embedded/libpico dev-libs/libusb dev-libs/jansson
+DESCRIPTION=Record signals with Picoscope devices.
 EAPI=7
 HOMEPAGE=https://github.com/slazav/pico_osc
 INHERIT=git-r3
 LICENSE=GPL
 PROPERTIES=live
+RDEPEND=dev-embedded/libpico dev-libs/libusb dev-libs/jansson
 SLOT=0
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=fadb5d367df24a7cfbdaab559eac393e
+_md5_=45bf328fc274c2b1215bd052aaed9657
