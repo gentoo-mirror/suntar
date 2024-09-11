@@ -13,7 +13,7 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-DEPEND=""
+DEPEND="dev-tcltk/blt"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
