@@ -1,4 +1,4 @@
-BDEPEND=sci-libs/fftw >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=sci-libs/fftw dev-libs/jansson >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install prepare unpack
 DESCRIPTION=Process oscilloscope data written in .sig format.
 EAPI=7
@@ -9,4 +9,4 @@ PROPERTIES=live
 RDEPEND=dev-tcltk/itcl dev-tcltk/blt
 SLOT=0
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=cae711919b1c5946dfb2a84a3ec96560
+_md5_=ba35e1155ed447102e887a8596184af9
