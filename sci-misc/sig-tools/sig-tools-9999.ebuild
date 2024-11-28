@@ -18,7 +18,8 @@ RDEPEND="${DEPEND}
 	dev-tcltk/itcl
 	dev-tcltk/blt
 "
-BDEPEND="sci-libs/fftw"
+BDEPEND="sci-libs/fftw
+         dev-libs/jansson"
 
 src_prepare() {
   default
